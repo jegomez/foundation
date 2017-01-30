@@ -3,3 +3,10 @@
 	vertical-align: top;
     margin-left: 2%
 }
+nav {
+	background: rgb(227,227,227);
+}
+.contenedor-nav {
+	box-shadow: 5px 5px 5px #e3e3e3;
+	margin-bottom: 20px;
+}
