@@ -7,14 +7,15 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body class="">
-	<nav class="menu-centered">
-		<ul class="menu medium-horizontal">
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Notas</a></li>
-			<li><a href="#">Quien soy</a></li>
-			<li><a href="#">Contacto</a></li>
-			<li><a href="#">TW</a></li>
-		</ul>
+	<nav class="" data-sticky-container>
+		<div class="sticky" data-sticky data-margin-top="0">
+			<ul class="menu middle">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Notas</a></li>
+				<li><a href="#">Quien soy</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
 	</nav>
 	<section>
 		<article class="row">
@@ -83,8 +84,8 @@
 	</section>
 	<!-- Fin de slider Testimonios-->
 	<section>
-		<form action="">
-			<div class="row">
+		<form action="" class="row">
+			<div class="medium-6 columns">
 				<label for="">Nombre
 					<input type="text" placeholder="Ingrese su nombre">
 				</label>
@@ -94,10 +95,14 @@
 				<label for="">Asunto
 					<input type="text" placeholder="Ingrese su asunto">
 				</label>
+			</div>
+			<div class="medium-6 columns">
 				<label for="">Mensaje
 					<textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
 				</label>
+				<a href="#" class="hollow button">Leer más</a>
 			</div>
+			
 		</form>
 	</section>
 	<!-- Fin de formulario -->
