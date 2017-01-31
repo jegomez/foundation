@@ -10,7 +10,6 @@
 <body class="">
 	<div class="contenedor-nav" data-sticky-container>
 		<nav class="menu-centered sticky" data-sticky data-margin-top="0" style="width:100%">
-			
 			<ul class="menu" data-magellan>
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Notas</a></li>
@@ -25,6 +24,7 @@
 			<a href="#" class="medium-4  thumbnail">
 				<img class="img-nota" src="img/interchange/comodoro-rivadavia.jpg" alt="comodoro-rivadavia.">
 			</a>
+			
 			<div class="contenedor-noticia medium-7">
 				<h1>Titulo</h1>
 				<p>
@@ -52,7 +52,7 @@
 	</section>
 	<hr>
 	<!-- Fin de sección quien soy-->
-	<div data-interchange="[img/interchange/comodoro-rivadavia.jpg, small], [img/interchange/comodoro-rivadavia.jpg, medium], [img/interchange/comodoro-rivadavia.jpg, large]"></div>
+	
 	<!-- Slider Testimonios -->
 	<section class="row orbit large-8" role="region" arial-label="Testimonios" data-orbit>
 		<ul class="orbit-container">
@@ -109,9 +109,15 @@
 		</form>
 	</section>
 	<!-- Fin de formulario -->
-	<footer>
+
+	<section id="info-container">
+		<div class="info-map" data-interchange="[map-small.html, small], [maps.html, medium]">
+		</div>	
+	</section>
+	<!-- Fin de mapa-->
+	<footer class="footer">
 		<nav class="menu-rigth">
-			<ul class="menu align-left">
+			<ul class="menu align-left links">
 				<li><a href="#"><i class="fi-social-facebook"></i></a></li>
 				<li><a href="#"><i class="fi-social-twitter"></i></a></li>
 				<li><a href="#"><i class="fi-social-linkedin"></i></a></li>
@@ -123,6 +129,7 @@
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/what-input.js"></script>
 	<script src="js/vendor/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.interchange.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
