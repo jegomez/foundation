@@ -7,25 +7,25 @@
 	<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
-<body class="">
+<body class="sections">
 	<div class="contenedor-nav" data-sticky-container>
 		<div class="title-bar" data-responsive-toggle="menu-burger" data-hide-for="medium">
 		  <button class="menu-icon" type="button" data-toggle></button>
 		  <div class="title-bar-title">Menu</div>
 		</div>
 		<nav class="menu-centered sticky" id="menu-burger" data-sticky data-margin-top="0" data-animate="hinge-in-from-top hinge-out-from-top" style="width:100%;">
-			<ul class="vertical medium-horizontal menu" data-magellan>
+			<ul class="horizontal medium-horizontal menu" data-magellan>
 				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Notas</a></li>
-				<li><a href="#">Quien soy</a></li>
-				<li><a href="#">Testimonios</a></li>
-				<li><a href="#">Clientes</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#notas">Notas</a></li>
+				<li><a href="#quien-soy">Quien soy</a></li>
+				<li><a href="#testimonios">Testimonios</a></li>
+				<li><a href="#clientes">Clientes</a></li>
+				<li><a href="#contacto">Contacto</a></li>
 			</ul>
 		</nav>
 	</div>
 	<section>
-		<article class="row">
+		<article class="row" id="notas" data-magellan-target="notas">
 			<a href="#" class="medium-4  thumbnail">
 				<img class="img-nota" src="img/interchange/comodoro-rivadavia.jpg" alt="comodoro-rivadavia.">
 			</a>
@@ -43,7 +43,7 @@
 	<!-- Fin de articulo de notas-->
 	<section>
 		<article class="row">
-			<div class="media-object-section">
+			<div class="media-object-section" id="quien-soy" data-magellan-target="quien-soy">
 				<h2>Quien soy</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident animi culpa unde incidunt dolorem, molestias assumenda eum non repellat quas tempore eius consequatur, perspiciatis, reprehenderit sint cumque quis molestiae a.
@@ -59,7 +59,8 @@
 	<!-- Fin de sección quien soy-->
 	
 	<!-- Slider Testimonios -->
-	<section class="row orbit large-8" role="region" arial-label="Testimonios" data-orbit>
+	<section class="row orbit large-10" role="region" arial-label="Testimonios" data-orbit id="testimonios" data-magellan-target="testimonios">
+		<h2>Tesmonios</h2>
 		<ul class="orbit-container">
     		<li class="is-active orbit-slide">
 		      <div>
@@ -90,9 +91,11 @@
 		   <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
 		</nav>
 	</section>
+	<hr>
 	<!-- Fin de slider Testimonios-->
 	<section>
-		<div class="row column medium-6 medium-centered">
+		<div class="row column medium-10 medium-centered" id="clientes" data-magellan-target="clientes">
+			<h2>Clientes</h2>
 			<ul class="tabs text-center" data-tabs id="tabs-clientes">
 				<li class="tabs-title is-active">
 					<a href="#cliente1" aria-selected="true">
@@ -120,15 +123,17 @@
 			</div>
 		</div>
 	</section>
+	<hr>
 	<!-- fin de clientes -->
 	<section>
-		<form action="" class="row">
+		<form action="" class="row" data-abide novalidate id="contacto" data-magellan-target="contacto">
+			<h2>Contacto</h2>
 			<div class="medium-6 columns">
 				<label for="">Nombre
 					<input type="text" placeholder="Ingrese su nombre">
 				</label>
 				<label for="">E-mail
-					<input type="email" placeholder="Ingrese su email">
+					<input type="email" placeholder="Ingrese su email" required pattern="email">
 				</label>
 				<label for="">Asunto
 					<input type="text" placeholder="Ingrese su asunto">
